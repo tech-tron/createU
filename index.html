@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>createsU</title>
   <meta charset="UTF-8">
@@ -12,9 +12,7 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 
-  <style rel="stylesheet">
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 
@@ -22,22 +20,25 @@
   <div id="content_main">
 <!--form disapears onClick-->
     <form id="constructor_form">
-      gender:
-      <form id="form_group">
-        <input type="radio" class="left" id="male" checked>male
-        <input type="radio" id="female">female
-        <br>
-      </form>
-      firstName:
-      <input type="text" id="firstName" placeholder="elon">
-      <br>
-      lastName:
-      <input type="text" id="lastName" placeholder="musk">
-      <br>
-      age:
+      <div id="gender">
+        <button type="button" id="male">male</button>
+        <button type="button" id="female">female</button>
+      </div>
+      <input type="text" id="firstName" placeholder="First Name">
+      <input type="text" id="lastName" placeholder="Last Name">
+      <p>birthYear:</p>
+      <ul id="birthdate">
+      </ul>
       <!--input type="number"-->
       <br>
-      hairColor:
+      <p>hairColor:</p>
+<!--
+    years
+    drag and drops
+    5 current are horizontal
+    trailed by left and right
+    horizontal columbs
+-->
       <form id="form_group_horizontal">
       <div id="button_toggle">
 <!--on both button_toggle 's
@@ -63,8 +64,8 @@
         <!--bald-->
       </div>
       <br>
-      eyeColor:
-      <form id="form_group_horizontal">
+      <p>eyeColor:</p>
+      <div id="form_group_horizontal">
         <div id="button_toggle">
           <button type="button" id="blue">
             blue
@@ -78,13 +79,11 @@
           <button type="button" id="brown">
             brown
           </button>
-
-          <button type="button" id="submit_people">Create</button>
         </div>
-      </form>
-      <br>
-    </form>
 
+      </div>
+    </form>
+    <button type="button" id="submit_people">Create</button>
 <!--thumbsUp man slides over disapearing form
     followed by carousel of info
     with last add as current
