@@ -15,24 +15,25 @@ body {
 #constructor_form {
   width: 80%;
   margin: 10%;
+  margin-top:0;
 }
 
 #gender {
-  margin: 0 0 0 10%;
+  margin: 0 10%;
   width: 100%;
 }
 #gender button {
   width: 40%;
   display:inline-block;
   height: 30px;
-  margin: 10px 0 5px 0;
-
+  margin: 10px 0;
 }
 
 input {
   width: 80%;
-  margin: 5px 10%;
+  margin: 0 10%;
   height: 1.5em;
+  text-align: center;
 }
 
 
